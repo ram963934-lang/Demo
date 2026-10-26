@@ -1,0 +1,129 @@
+/* Flipkart Seller Hub — enterprise design system */
+.flipkart-app {
+  --fk-blue: #2874f0;
+  --fk-blue-dark: #0053e2;
+  --fk-blue-light: #e8f0fe;
+  --fk-yellow: #ffe500;
+  --fk-sidebar-bg: #ffffff;
+  --fk-sidebar-width: 272px;
+  --fk-sidebar-collapsed: 76px;
+  --fk-sidebar-text: #64748b;
+  --fk-sidebar-active-bg: linear-gradient(135deg, #e8f0fe 0%, #f0f6ff 100%);
+  --fk-sidebar-active-text: #2874f0;
+  --fk-sidebar-muted: #94a3b8;
+  --fk-header-bg: rgba(255, 255, 255, 0.82);
+  --fk-header-border: #e6eaf0;
+  --fk-page-bg: #f5f7fa;
+  --fk-card-bg: #ffffff;
+  --fk-border: #e6eaf0;
+  --fk-text: #1f2937;
+  --fk-text-muted: #64748b;
+  --fk-success: #22c55e;
+  --fk-warning: #f59e0b;
+  --fk-danger: #ef4444;
+  --fk-radius-sm: 8px;
+  --fk-radius: 12px;
+  --fk-radius-lg: 16px;
+  --fk-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --fk-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+  --fk-shadow-lg: 0 12px 40px rgba(15, 23, 42, 0.08);
+  --fk-font: var(--font-geist-sans), "Inter", system-ui, sans-serif;
+  font-family: var(--fk-font);
+  color: var(--fk-text);
+  background: var(--fk-page-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.flipkart-app[data-theme="dark"] {
+  --fk-sidebar-bg: #111827;
+  --fk-sidebar-text: #94a3b8;
+  --fk-sidebar-active-bg: linear-gradient(135deg, #1e3a5f 0%, #1e293b 100%);
+  --fk-header-bg: rgba(17, 24, 39, 0.88);
+  --fk-header-border: #1f2937;
+  --fk-page-bg: #0f172a;
+  --fk-card-bg: #1e293b;
+  --fk-border: #334155;
+  --fk-text: #f1f5f9;
+  --fk-text-muted: #94a3b8;
+  --fk-blue-light: #1e3a5f;
+}
+
+.flipkart-app * {
+  box-sizing: border-box;
+}
+
+.fk-sidebar-link {
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.fk-sidebar-link:hover {
+  background: #f8fafc !important;
+}
+
+.flipkart-app[data-theme="dark"] .fk-sidebar-link:hover {
+  background: #1f2937 !important;
+}
+
+.fk-btn-primary {
+  background: linear-gradient(135deg, var(--fk-blue) 0%, var(--fk-blue-dark) 100%) !important;
+  box-shadow: 0 2px 8px rgba(40, 116, 240, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.fk-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(40, 116, 240, 0.4) !important;
+}
+
+.fk-btn-outline {
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease !important;
+}
+
+.fk-btn-outline:hover {
+  background: var(--fk-blue-light) !important;
+  transform: translateY(-1px);
+}
+
+.fk-table-row:hover {
+  background: #f8fafc !important;
+}
+
+.flipkart-app[data-theme="dark"] .fk-table-row:hover {
+  background: #334155 !important;
+}
+
+.fk-sticky-thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.fk-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--fk-shadow-lg);
+}
+
+.fk-header-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.fk-kpi-sparkline {
+  opacity: 0.9;
+}
+
+@keyframes fk-ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.fk-btn-ripple:active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.35);
+  animation: fk-ripple 0.5s ease-out;
+}

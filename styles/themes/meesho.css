@@ -1,0 +1,137 @@
+/* Meesho Supplier Hub — palette extracted from reference screenshots */
+.meesho-app {
+  /* Sidebar */
+  --ms-sidebar-bg: #27282a;
+  --ms-sidebar-width: 240px;
+  --ms-sidebar-collapsed: 68px;
+  --ms-sidebar-text: #a8a9ab;
+  --ms-sidebar-text-active: #ffffff;
+  --ms-sidebar-muted: #74797d;
+  --ms-sidebar-active: #5a5e68;
+  --ms-sidebar-active-bar: #3c28b8;
+  --ms-sidebar-btn-bg: #404143;
+  --ms-sidebar-btn-border: rgba(255, 255, 255, 0.1);
+  --ms-sidebar-avatar-bg: #4d4e52;
+  --ms-sidebar-hover: #323438;
+
+  /* Brand purple — dominant UI accent (#3c28b8 from screenshot sampling) */
+  --ms-purple: #3c28b8;
+  --ms-purple-hover: #341faa;
+  --ms-purple-active: #2e1a96;
+  --ms-purple-light: #f4f0ff;
+  --ms-purple-muted: #ece8f8;
+  --ms-purple-border: #d8cff5;
+
+  /* Surfaces */
+  --ms-page-bg: #f2f5fa;
+  --ms-card-bg: #ffffff;
+  --ms-topbar-bg: #ffffff;
+  --ms-table-header-bg: #f8f9fa;
+  --ms-filter-active-bg: #eef0f3;
+  --ms-hover-bg: #f4f0ff;
+  --ms-input-bg: #ffffff;
+
+  /* Borders & dividers */
+  --ms-border: #e7ebee;
+  --ms-border-light: #ebecee;
+  --ms-divider: #eef0f3;
+  --ms-input-border: #dce0e4;
+
+  /* Typography */
+  --ms-text: #212121;
+  --ms-text-muted: #666666;
+  --ms-text-secondary: #98999b;
+  --ms-icon-muted: #9a9ba3;
+
+  /* Tabs & interactive */
+  --ms-tab-active: #3c28b8;
+  --ms-tab-inactive: #666666;
+
+  /* Banners & alerts */
+  --ms-yellow-banner: #fff7d6;
+  --ms-yellow-banner-border: #fef0b8;
+  --ms-alert-bg: #f4f4fc;
+  --ms-alert-border: #e8e4f8;
+  --ms-promo-bg-start: #f4f4fc;
+  --ms-promo-bg-end: #ffffff;
+  --ms-promo-border: #ece8f4;
+
+  /* Badges */
+  --ms-pink-badge: #f43499;
+  --ms-pink-text: #ffffff;
+  --ms-green: #22c55e;
+  --ms-green-badge-bg: #e8f5e9;
+  --ms-green-badge-text: #2e7d32;
+
+  /* Radius & elevation */
+  --ms-radius-sm: 4px;
+  --ms-radius-md: 6px;
+  --ms-radius-lg: 8px;
+  --ms-shadow-card: 0 1px 2px rgba(33, 33, 33, 0.04);
+
+  --ms-font: var(--font-geist-sans), "Inter", system-ui, sans-serif;
+  font-family: var(--ms-font);
+  color: var(--ms-text);
+  background: var(--ms-page-bg);
+}
+
+.meesho-app * {
+  box-sizing: border-box;
+}
+
+/* Top bar */
+.meesho-topbar {
+  border-bottom: 1px solid var(--ms-border);
+  background: var(--ms-topbar-bg);
+}
+
+.meesho-topbar-btn {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--ms-radius-md);
+  border: 1px solid var(--ms-border);
+  background: var(--ms-card-bg);
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--ms-text-muted);
+}
+
+.meesho-topbar-btn:hover {
+  background: var(--ms-filter-active-bg);
+  border-color: var(--ms-border-light);
+}
+
+/* Sidebar link hover (visual only) */
+.meesho-sidebar-link:hover {
+  background: var(--ms-sidebar-hover) !important;
+}
+
+/* Card surface helper */
+.meesho-card {
+  background: var(--ms-card-bg);
+  border: 1px solid var(--ms-border);
+  border-radius: var(--ms-radius-lg);
+  box-shadow: var(--ms-shadow-card);
+}
+
+/* Primary / outline buttons — hover tints only */
+.meesho-btn-primary:hover {
+  background: var(--ms-purple-hover) !important;
+}
+
+.meesho-btn-outline:hover {
+  background: var(--ms-purple-light) !important;
+}
+
+/* Filter chip hover */
+.meesho-filter-chip:hover {
+  background: var(--ms-filter-active-bg) !important;
+  border-color: var(--ms-border-light) !important;
+}
+
+/* Catalog list item hover */
+.meesho-catalog-item:hover {
+  background: var(--ms-hover-bg) !important;
+}

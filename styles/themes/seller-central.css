@@ -1,0 +1,116 @@
+/**
+ * Amazon Seller Central India — tokens from reference/amazon-sc/dashboard.png.png
+ */
+:root {
+  --sc-nav: #002f36;
+  --sc-nav-search: #004b54;
+  --sc-nav-search-border: #008296;
+  --sc-nav-search-btn: #008296;
+  --sc-subnav: #004b54;
+  --sc-page: #f0f2f2;
+  --sc-card: #ffffff;
+  --sc-text: #0f1111;
+  --sc-text-secondary: #565959;
+  --sc-link: #007185;
+  --sc-border: #d5d9d9;
+  --sc-border-row: #e7e7e7;
+  --sc-healthy: #067d62;
+  --sc-teal-count: #007185;
+  --sc-star: #ff9900;
+  --sc-empty-bg: #f0f2f2;
+  --sc-table-head: #fafafa;
+  --sc-news-date: #c45500;
+  --sc-nav-h: 64px;
+  --sc-subnav-h: 36px;
+  --sc-left-col: 288px;
+  --sc-content-max: 1344px;
+  --sc-font: "Amazon Ember", Arial, sans-serif;
+}
+
+.sc-page {
+  min-height: 100vh;
+  background: var(--sc-page);
+  font-family: var(--sc-font);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--sc-text);
+}
+
+.sc-white-card {
+  background: var(--sc-card);
+  border: 1px solid var(--sc-border);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.sc-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--sc-border);
+}
+
+.sc-panel-head-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sc-panel-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--sc-text);
+  margin: 0;
+}
+
+.sc-section-label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sc-link);
+}
+
+.sc-link {
+  color: var(--sc-link);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+}
+
+.sc-link:hover {
+  text-decoration: underline;
+  color: #005a66;
+}
+
+.sc-info-btn {
+  display: inline-flex;
+  color: #879596;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.sc-kebab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #565959;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.sc-kebab-btn:hover {
+  background: #f0f2f2;
+}

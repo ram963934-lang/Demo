@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@keyframes dg-blob-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.08); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+@keyframes dg-blob-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-35px, 25px) scale(1.1); }
+}
+
+@keyframes dg-blob-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(25px, 35px) scale(0.92); }
+}
+
+@keyframes dg-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes dg-particle {
+  0%, 100% { opacity: 0.15; transform: translateY(0); }
+  50% { opacity: 0.6; transform: translateY(-8px); }
+}
+
+@keyframes dg-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes dg-ripple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+.dg-blob-1 { animation: dg-blob-1 14s ease-in-out infinite; }
+.dg-blob-2 { animation: dg-blob-2 18s ease-in-out infinite; }
+.dg-blob-3 { animation: dg-blob-3 16s ease-in-out infinite; }
+.dg-float { animation: dg-float 5s ease-in-out infinite; }
+.dg-float-delay { animation: dg-float 5s ease-in-out 1.2s infinite; }
+.dg-particle { animation: dg-particle 4s ease-in-out infinite; }
+.dg-btn-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: dg-spin 0.7s linear infinite;
+}
+
+.dg-signin-btn {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 45%, #7c3aed 100%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dg-signin-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.45);
+}
+
+.dg-signin-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.dg-ripple-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+  animation: dg-ripple 0.6s ease-out forwards;
+}
+
+.dg-login-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  outline: none;
+}
+
+.dg-glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.dg-marketplace-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.dg-marketplace-card:hover {
+  transform: translateY(-8px);
+}

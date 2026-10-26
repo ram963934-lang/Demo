@@ -1,0 +1,13 @@
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .focus-ring {
+    @apply outline-none focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:border-ring;
+  }
+}

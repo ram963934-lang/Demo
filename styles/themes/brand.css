@@ -1,0 +1,36 @@
+/**
+ * DropshipGuru brand tokens.
+ * Import this file from globals.css to override shadcn defaults with product identity.
+ */
+:root {
+  /* Brand accent — teal-green for commerce/growth */
+  --brand: oklch(0.62 0.14 175);
+  --brand-foreground: oklch(0.99 0 0);
+  --brand-muted: oklch(0.94 0.04 175);
+
+  /* Map brand to primary for consistent UI */
+  --primary: var(--brand);
+  --primary-foreground: var(--brand-foreground);
+
+  /* Sidebar accent aligned with brand */
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: var(--brand-foreground);
+}
+
+.dark {
+  --brand: oklch(0.72 0.14 175);
+  --brand-foreground: oklch(0.15 0.02 175);
+  --brand-muted: oklch(0.28 0.06 175);
+
+  --primary: var(--brand);
+  --primary-foreground: var(--brand-foreground);
+
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: var(--brand-foreground);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-muted: var(--brand-muted);
+}
